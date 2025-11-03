@@ -1,6 +1,6 @@
-# Scripts for parsing log files to extract specific information or patterns
+# SCRIPTS FOR PARSING LOG FILES TO EXTRACT SPECIFIC INFORMATION OR PATTERNS
 
-# Extract lines containing "ERROR"
+# 1. Extract Lines Containing "ERROR"
 with open("app.log", "r") as f:
   for line in f:
     if "ERROR" in line:
@@ -8,7 +8,7 @@ with open("app.log", "r") as f:
 # This reads the file line by line and prints only those that contain "ERROR".
 
 
-# Extract specific information with Regex
+# 2. Extract Specific Information with Regex
 import re
 pattern = r"(\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}).*User login: (\w+)"
 with open("app.log", "r") as f:
@@ -29,7 +29,7 @@ with open("app.log", "r") as f:
 print("Total errors:", error_count)
 
 
-# Extract IP addresses
+# 3. Extract IP Addresses
 import re
 pattern = r"(\d+\.\d+\.\d+\.\d+)" #basic IPV4 pattern
 with open("network.log", "r") as f:
