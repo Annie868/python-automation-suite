@@ -40,13 +40,13 @@ with open("network.log", "r") as f:
 # Example output: 192.168.1.10
 
 
-```
+"""
 Tips:
 - Use .split() or strip() for simple structured logs.
 - Use re (regular expressions) for complex or irregular logs.
 - Combine with pandas for structured analysis and CSV reports.
 - For huge logs, process files line by line instead of reading the whole file into memory.
-```
+"""
 
 
 
